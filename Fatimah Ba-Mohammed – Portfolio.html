@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>فاطمة بامحمد | Fatimah Ba-Mohammed</title>
+<meta name="description" content="Software engineer – databases and web development. مهندسة برمجيات – قواعد البيانات وتطوير الويب.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Readex+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef4f3;--surface:#fff;--ink:#12303a;--muted:#4d6870;--line:#cfdedc;--teal:#0f6b73;--teal-ink:#fff;--sun:#e8a92c;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1c21;--surface:#14282f;--ink:#e6f0ef;--muted:#9bb5b9;--line:#24424a;--teal:#5cc2c9;--teal-ink:#08242a;--sun:#f0b94a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1c21;--surface:#14282f;--ink:#e6f0ef;--muted:#9bb5b9;--line:#24424a;--teal:#5cc2c9;--teal-ink:#08242a;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.8 "IBM Plex Sans Arabic",system-ui,sans-serif}
+h1,h2,h3{font-family:"Readex Pro","IBM Plex Sans Arabic",system-ui,sans-serif;margin:0;line-height:1.3}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+.bar div{max-width:60rem;margin:auto;padding:.6rem 1.25rem;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.bar nav{display:flex;gap:1.1rem;overflow-x:auto;white-space:nowrap;font-size:.95rem}
+.bar nav a{text-decoration:none;color:var(--muted)}
+.bar nav a:hover{color:var(--teal)}
+button{font:inherit;cursor:pointer;border:2px solid var(--teal);background:var(--teal);color:var(--teal-ink);border-radius:999px;padding:.2rem 1rem;font-weight:600;flex:none}
+main{max-width:60rem;margin:auto;padding:0 1.25rem 4rem}
+.hero{padding:3.5rem 0 2.5rem;border-bottom:6px solid var(--teal)}
+.hero h1{font-size:clamp(2.2rem,7vw,4.2rem);font-weight:700;letter-spacing:-.01em}
+.hero .role{font-size:clamp(1.15rem,3vw,1.6rem);color:var(--teal);font-weight:600;margin:.5rem 0 1.25rem}
+.hero p{max-width:42rem;margin:0 0 1.25rem}
+.meta{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;color:var(--muted);font-size:.98rem}
+.cta{display:inline-block;margin-top:.5rem;background:var(--sun);color:#1b1b1b;padding:.5rem 1.4rem;border-radius:999px;text-decoration:none;font-weight:600}
+section{padding:3rem 0 0}
+h2{font-size:1.6rem;font-weight:700;margin-bottom:1.5rem;padding-inline-start:.9rem;border-inline-start:6px solid var(--sun)}
+.job{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:1rem}
+.job h3{font-size:1.15rem}
+.job .where{color:var(--muted);font-size:.97rem;margin:.2rem 0 .6rem}
+.job .when{display:inline-block;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:0 .6rem;font-size:.9rem;margin-bottom:.5rem}
+ul{margin:.4rem 0 0;padding-inline-start:1.3rem}
+li{margin-bottom:.35rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1rem}
+.skill{border-top:3px solid var(--teal);background:var(--surface);padding:1rem 1.25rem;border-radius:0 0 10px 10px}
+.skill h3{font-size:1rem;margin-bottom:.3rem;color:var(--teal)}
+.skill p{margin:0}
+footer{border-top:1px solid var(--line);padding:2rem 1.25rem;text-align:center;color:var(--muted);font-size:.95rem}
+[lang=en] body,body[lang=en]{font-family:"IBM Plex Sans Arabic",system-ui,sans-serif}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="bar"><div><nav id="nav"></nav><button id="lang" type="button"></button></div></header>
+<main id="app"></main>
+<footer id="foot"></footer>
+<script>
+var D={
+ar:{dir:"rtl",lang:"ar",btn:"English",
+name:"فاطمة سالم عبدالله بامحمد",role:"مهندسة برمجيات | قواعد البيانات وتطوير الويب",
+loc:"جدة، المملكة العربية السعودية",nat:"الجنسية: يمنية",mail:"راسليني",
+sum:"مهندسة برمجيات، حاصلة على الماجستير في نظم المعلومات من جامعة المنصورة والبكالوريوس في علوم الحاسب من جامعة الملك عبدالعزيز بتقدير جيد جداً ومرتبة الشرف الثانية. لديها مهارات في البرمجة (C++ وVB.NET وPHP وASP وJavaScript) وتصميم قواعد البيانات وOracle PL/SQL وتطوير الويب. درّست البرمجة وتطبيقات الحاسب لأكثر من أربع سنوات، وهي حاصلة على شهادة Oracle Certified Associate. عادت مؤخراً للنشاط المهني عبر العمل التطوعي في كتابة المحتوى والتسويق، ودورة في التصميم وإنشاء المحتوى بالذكاء الاصطناعي. تسعى للعمل في مجال هندسة البرمجيات.",
+h:{exp:"الخبرات العملية",edu:"المؤهلات العلمية",skills:"المهارات التقنية",certs:"الشهادات والدورات",ach:"الإنجازات",lang:"اللغات"},
+exp:[["متطوعة في كتابة المحتوى والتسويق","المنصة الوطنية للعمل التطوعي، المركز الوطني لتنمية القطاع غير الربحي","نوفمبر 2025 – يناير 2026 · 193 ساعة تطوعية",["كتابة المحتوى لفرص تطوعية مع جمعية للعمل التطوعي وخدمة المجتمع (112 ساعة).","التسويق لبرامج وأنشطة جمعية الدعوة والإرشاد وتوعية الجاليات (76 ساعة).","المشاركة في حملة توعوية عن مسببات الالتماس الكهربائي مع الدفاع المدني بأبو عريش (5 ساعات)."]],["فترة تفرغ للأسرة والتطوير المهني","","2011 – 2025",["إتمام الماجستير في نظم المعلومات (2011 – 2014) والحصول على شهادة Oracle PL/SQL Developer (2011) مع رعاية الأسرة."]],["مدرّسة حاسب آلي","معهد العالمية للحاسب والتقنية، جامعة الملك عبدالعزيز، جدة","سبتمبر 2006 – فبراير 2011",["تدريس مقررات البرمجة وتطبيقات الحاسب، ومنها Microsoft Office وبرامج الرسومات.","أشادت شهادة الخبرة الصادرة عن المعهد بأمانتها وتحملها للمسؤولية."]],["أعمال إدارية وفنية","مركز تقنية المعلومات، جامعة الملك عبدالعزيز (القسم النسائي)، جدة","2004 · 60 ساعة عمل",["جمع بيانات أجهزة الحاسب الآلي والمساهمة في بناء قاعدة بيانات لحصر الأجهزة."]]],
+edu:[["ماجستير في نظم المعلومات","كلية الحاسبات والمعلومات، جامعة المنصورة، مصر","2014",["التقدير العام: جيد (72.14%).","من المقررات: نظرية قواعد البيانات، نظم المعلومات الموزعة، قواعد البيانات كائئية التوجه، نظم الوسائط المتعددة المتقدمة، ومشروع التخرج."]],["بكالوريوس العلوم في علوم الحاسب","كلية العلوم، جامعة الملك عبدالعزيز، جدة","2006",["المعدل التراكمي 4.32 من 5، بتقدير جيد جداً ومرتبة الشرف الثانية."]],["الثانوية العامة (القسم العلمي)","جدة","2000 · 95.9%",[]]],
+skills:[["البرمجة","C++، VB.NET، VB، PHP، ASP، JavaScript"],["قواعد البيانات","تصميم قواعد البيانات، Oracle PL/SQL، MySQL، قواعد البيانات كائنية التوجه والموزعة"],["تطوير الويب","HTML، DHTML، JavaScript، PHP، ASP، تصميم صفحات الويب"],["أدوات الذكاء الاصطناعي","ChatGPT، Gemini، Claude في إنشاء المحتوى والتصميم"],["التصميم والوسائط","Photoshop، Flash، FrontPage، Publisher، Movie Maker"],["أخرى","Microsoft Office، Windows، التدريب التقني، كتابة المحتوى"]],
+certs:["دورة التصميم بالذكاء الاصطناعي (Gemini وChatGPT وClaude) – منصة فرصة التعليمية (سبتمبر 2026)","دورة اللغة الإنجليزية التأهيلية لطلاب الدراسات العليا الدوليين – جامعة المنصورة (2014)","Oracle Certified Associate – مطوّر Oracle PL/SQL (شركة Oracle، يوليو 2011)","دورة المحاسبة – معهد تحقيق الغاية للسيدات (بتقدير ممتاز 100%، 2007)","دورة السكرتارية – وكالة عمادة شؤون الطالبات للأنشطة الطلابية، جامعة الملك عبدالعزيز","الرخصة الدولية لقيادة الحاسب ICDL"],
+ach:["المركز الثالث في تصميم المواقع – مشروع خدمة المجتمع بجامعة الملك عبدالعزيز، مع خطاب تقدير من الرئيس التنفيذي لمجموعة صافولا (أكتوبر 2005)","المركز الثالث في مسابقة الحاسب الآلي ضمن مسابقة الحصاد السنوي، جامعة الملك عبدالعزيز (1425–1426هـ)","المشاركة في Demo Day – كلية الحاسبات وتقنية المعلومات، جامعة الملك عبدالعزيز (1428هـ)","خطابات شكر وتقدير من جامعة الملك عبدالعزيز للمشاركة في معرض العلوم ومسابقة الحصاد السنوي"],
+langs:["العربية: لغة أم","الإنجليزية: أتمّت دورة تأهيلية في اللغة الإنجليزية بجامعة المنصورة (2014)"],
+foot:"فاطمة بامحمد"},
+en:{dir:"ltr",lang:"en",btn:"العربية",
+name:"Fatimah Salem Abdullah Ba-Mohammed",role:"Software Engineer | Database and Web Development",
+loc:"Jeddah, Saudi Arabia",nat:"Nationality: Yemeni",mail:"Get in touch",
+sum:"Software engineer with a Master’s degree in Information Systems (Mansoura University) and a Bachelor’s degree in Computer Science (King Abdulaziz University, Very Good, Second Honors). Skilled in programming (C++, VB.NET, PHP, ASP, JavaScript), database design, Oracle PL/SQL and web development. Taught programming and software applications for over four years. Oracle Certified Associate. Recently resumed professional activity through volunteer content and marketing work and training in AI-assisted design and content creation (ChatGPT, Gemini, Claude). Seeking a software engineering role.",
+h:{exp:"Experience",edu:"Education",skills:"Technical skills",certs:"Certifications and training",ach:"Achievements",lang:"Languages"},
+exp:[["Volunteer Content Writer and Marketing Volunteer","National Volunteer Work Platform, National Center for Non-Profit Sector, Saudi Arabia","Nov 2025 – Jan 2026 · 193 volunteer hours",["Wrote content for volunteer opportunities with a volunteer work and community service association (112 hours).","Marketed programs and activities of a da’wa, guidance and expatriate awareness association (76 hours).","Took part in a public awareness campaign on electrical short circuits with the Abu Areesh Civil Defense (5 hours)."]],["Career Break – Family Care and Professional Development","","2011 – 2025",["Completed a Master’s degree in Information Systems (2011 – 2014) and the Oracle PL/SQL Developer certification (2011), while caring for family."]],["Computer Instructor","Al-Alamiah Institute for Computer & Technology, King Abdulaziz University, Jeddah","Sep 2006 – Feb 2011",["Taught programming courses and software applications, including Microsoft Office and graphics programs.","Recognized in the institute’s certificate of experience as trustworthy and responsible."]],["Administrative and Technical Work","IT Center, King Abdulaziz University (Female Section), Jeddah","2004 · 60 working hours",["Collected computer hardware data and helped build a hardware inventory database."]]],
+edu:[["Master’s Degree in Information Systems","Faculty of Computers & Information, Mansoura University, Egypt","2014",["Overall grade: Good (72.14%).","Coursework: Database Theory, Distributed Information Systems, Object-Oriented Databases, Advanced Multimedia Systems, and a final project."]],["Bachelor of Science in Computer Science","Faculty of Science, King Abdulaziz University, Jeddah","2006",["GPA 4.32 out of 5, Very Good with Second Honors."]],["General Secondary School Certificate (Science Section)","Jeddah","2000 · 95.9%",[]]],
+skills:[["Programming","C++, VB.NET, VB, PHP, ASP, JavaScript"],["Databases","Database design, Oracle PL/SQL, MySQL, object-oriented and distributed databases"],["Web development","HTML, DHTML, JavaScript, PHP, ASP, web page design"],["AI tools","ChatGPT, Gemini, Claude for content creation and design"],["Design and multimedia","Photoshop, Flash, FrontPage, Publisher, Movie Maker"],["Other","Microsoft Office, Windows, technical training, content writing"]],
+certs:["AI-Powered Design Course (Gemini, ChatGPT, Claude) – Forsa.com educational platform (Sep 2026)","English Qualifying Course for International Graduate Students – Mansoura University (2014)","Oracle Certified Associate – Oracle PL/SQL Developer (Oracle Corporation, July 2011)","Accounting Training Course – Al-Ghaya Institute for Ladies (Excellent, 100%, 2007)","Secretarial Skills Course – Student Affairs Vice Deanship, King Abdulaziz University","ICDL – International Computer Driving License"],
+ach:["3rd place, Website Design – King Abdulaziz University Service Learning Project; Letter of Recognition from The Savola Group CEO (Oct 2005)","3rd place, Computer Competition – Annual Harvest Competition, King Abdulaziz University (2005–2006)","Participant, Demo Day – College of Computing and Information Technology, King Abdulaziz University (2007)","Letters of appreciation from King Abdulaziz University for participation in the Science Exhibition and the Annual Harvest Competition"],
+langs:["Arabic: Native","English: Completed an English qualifying course at Mansoura University (2014)"],
+foot:"Fatimah Ba-Mohammed"}};
+var EMAIL="FatmahBamohammed@gmail.com";
+function li(a){return a.length?"<ul>"+a.map(function(x){return"<li>"+x+"</li>"}).join("")+"</ul>":""}
+function items(a){return a.map(function(j){return'<article class="job"><h3>'+j[0]+'</h3>'+(j[1]?'<div class="where">'+j[1]+'</div>':'')+'<span class="when">'+j[2]+'</span>'+li(j[3])+'</article>'}).join("")}
+function render(l){
+var d=D[l],h=d.h;
+document.documentElement.lang=d.lang;document.documentElement.dir=d.dir;
+document.title=d.name;
+document.getElementById("lang").textContent=d.btn;
+document.getElementById("nav").innerHTML=["exp","edu","skills","certs","ach"].map(function(k){return'<a href="#'+k+'">'+h[k]+'</a>'}).join("");
+document.getElementById("app").innerHTML=
+'<div class="hero"><h1>'+d.name+'</h1><div class="role">'+d.role+'</div><p>'+d.sum+'</p><div class="meta"><span>'+d.loc+'</span><span>'+d.nat+'</span></div><a class="cta" href="mailto:'+EMAIL+'">'+d.mail+'</a></div>'+
+'<section id="exp"><h2>'+h.exp+'</h2>'+items(d.exp)+'</section>'+
+'<section id="edu"><h2>'+h.edu+'</h2>'+items(d.edu)+'</section>'+
+'<section id="skills"><h2>'+h.skills+'</h2><div class="grid">'+d.skills.map(function(s){return'<div class="skill"><h3>'+s[0]+'</h3><p>'+s[1]+'</p></div>'}).join("")+'</div></section>'+
+'<section id="certs"><h2>'+h.certs+'</h2>'+li(d.certs)+'</section>'+
+'<section id="ach"><h2>'+h.ach+'</h2>'+li(d.ach)+'</section>'+
+'<section id="lang-s"><h2>'+h.lang+'</h2>'+li(d.langs)+'</section>';
+document.getElementById("foot").innerHTML=d.foot+' · <a href="mailto:'+EMAIL+'">'+EMAIL+'</a>';
+}
+var cur="ar";
+try{var s=localStorage.getItem("cv-lang");if(s==="en"||s==="ar")cur=s;else if((navigator.language||"").slice(0,2)!=="ar")cur="en"}catch(e){}
+if(location.hash==="#en")cur="en";
+render(cur);
+document.getElementById("lang").addEventListener("click",function(){
+cur=cur==="ar"?"en":"ar";render(cur);window.scrollTo(0,0);
+try{localStorage.setItem("cv-lang",cur)}catch(e){}
+});
+</script>
+</body>
+</html>
